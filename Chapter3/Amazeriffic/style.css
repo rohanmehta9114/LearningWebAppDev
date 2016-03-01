@@ -8,7 +8,7 @@ header, main, footer {
 
 header .container, main .container, footer .container {
   max-width: 855px;
-  margin: auto;
+  margin-bottom: 40px;
 }
 
 header {
@@ -19,6 +19,8 @@ header {
 header h1 {
   float: left;
   width: 570px;
+  font-size: 27px;
+  font-weight: bold;
 }
 
 header nav {
@@ -29,18 +31,32 @@ header nav {
 main {
   background: white;
   overflow: auto;
+  padding-left: 25px;
 }
-
+main h2
+{
+  font-size: 20px;
+  font-weight: bold;
+}
 main .left {
   float: left;
   width: 570px;
+
 }
 
 main .right {
   float: right;
   width: 285px;
 }
-
+main li
+{
+    padding: 10px 10px 10px 10px;
+}
+main p:first-child{
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 footer .left {
   float: left;
   width: 570px;
@@ -49,4 +65,5 @@ footer .left {
 footer .sitemap {
   float: right;
   width: 285px;
+
 }
