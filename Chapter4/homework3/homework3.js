@@ -17,7 +17,7 @@ function exercise2 (arraynums) {
 function exercise3 (arraynums){
   var ED = false;
   arraynums.forEach(function (values) {
-    if(values % 2 == 0) {
+    if(values % 2 === 0) {
        ED = true;
     }
   });
@@ -29,7 +29,7 @@ function exercise3 (arraynums){
    var count = 0;
    var len = arraynums.length;
    arraynums.forEach(function (values) {
-     if(values % 2 == 0) {
+     if(values % 2 === 0) {
         count++;
      }
    });
@@ -95,7 +95,7 @@ function max(arraynums){
 function arrayEven(numsarray){
   count = 0;
   ED = false;
-  var ans = _.find(numsarray, function (value){if(value % 2 == 0) count++;});
+  var ans = _.find(numsarray, function (value){if(value % 2 === 0) count++;});
   if(count > 0){
     ED = true;
     document.getElementById("arrayEven").innerHTML = " Are all the elements in the array [" + numsarray +"] even ? : " + ED;
@@ -108,7 +108,7 @@ function arrayWholeEven(numsarray){
   count = 0;
   ED = false;
   len = numsarray.length;
-  var ans = _.find(numsarray, function (value){if(value % 2 == 0) count++;});
+  var ans = _.find(numsarray, function (value){if(value % 2 === 0) count++;});
   if(count == len){
     ED = true;
     document.getElementById("arrayWholeEven").innerHTML = " Is the value of any element in the array [" + numsarray +"] even ? : " + ED;
